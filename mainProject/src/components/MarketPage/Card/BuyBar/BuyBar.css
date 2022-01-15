@@ -1,0 +1,193 @@
+.buy-bar-cube {
+    width: 80%;
+    min-width: 180px;
+    height: 50px;
+    transform-style: preserve-3d;
+}
+
+.buy-bar-cube_down {
+    animation: rotateDown90  0.5s;
+    transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg);
+}
+
+.buy-bar-cube_up {
+    animation: rotateUp90  0.5s;
+    transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg);
+}
+
+.basket-button {
+    display: flex;
+    justify-content: center;
+    transform: translateZ(25px);
+    transform-style: preserve-3d;
+}
+
+.basket-button-title {
+    margin: auto;
+    font-size: 34px;
+}
+
+.count-panel__wrapper {
+    /*display: grid;*/
+    /*grid-template-columns: 1fr 2fr 1fr;*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transform: rotateX(90deg) translateZ(25px);
+    background: #00ffcc;
+    text-align: center;
+    transition: visibility 0s .5s;
+}
+
+.button {
+    height: 100%;
+    background: white;
+    display: flex;
+    margin: 0;
+    text-align: center;
+    line-height: 18px;
+}
+
+.button_item {
+    width: 100%;
+    height: 100%;
+    padding: unset;
+    font-size: 34px;
+    background-color:#0269cf;
+    text-decoration:none;
+    color: whitesmoke;
+    background-image: linear-gradient(bottom, rgb(255, 120, 106) 0%, rgb(255, 71, 52) 100%);
+    border-left: 10px;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 0 #0d86ff, 0 2px 0 0 #2994ff, 0 5px 7px #0069d1;
+    cursor: pointer;
+}
+
+input {
+    width: calc(100% - 40px);
+    height: calc(100% - 5px);
+    margin: 3px;
+    font-size: 56px;
+    background-color: white;
+    color: black;
+    border: 0;
+    border-radius: 0;
+}
+
+.mines {
+    width: 50px;
+
+    z-index: 50;
+}
+
+.plus {
+    width: 50px;
+;
+    z-index: 50;
+}
+
+
+.input_quantity {
+    text-align: center;
+    margin: auto;
+    border-radius: 0;
+}
+
+
+
+.quantity-counter {
+    width: 98%;
+    height: 100%;
+    justify-self: center;
+}
+
+.buy-bar-cube.down {
+    animation: rotateDown90  1.5s;
+    transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg);
+}
+
+.buy-bar-cube.down > .count-panel__wrapper {
+    visibility: visible;
+    transition: visibility 0s 0s;
+}
+
+
+.buy-bar-cube.up {
+    animation: rotateUp90  1.5s;
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
+
+
+@keyframes rotateDown90 {
+    from {
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0px);
+    }
+    25% {
+        transform: rotateX(35deg) rotateY(0deg) rotateZ(0deg) translateX(0px);
+    }
+    45% {
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0px);
+    }
+    55% {
+        transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg) translateX(0px);
+    }
+    75% {
+        transform: rotateX(-125deg) rotateY(0deg) rotateZ(0deg) translateX(0px);
+    }
+    to {
+        transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg) translateX(0px);
+    }
+}
+
+@keyframes rotateUp90 {
+    from {
+        transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg) translateX(0px);
+    }
+    25% {
+        transform: rotateX(-125deg) rotateY(0deg) rotateZ(0deg) translateX(0px);
+    }
+    45% {
+        transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg) translateX(0px);
+    }
+    55% {
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0px);
+    }
+    75% {
+        transform: rotateX(35deg) rotateY(0deg) rotateZ(0deg) translateX(0px);
+    }
+    to {
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0px);
+    }
+}
+
+.buy-bar-side {
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+input[type="number"]:hover,
+input[type="number"]:focus {
+    -moz-appearance: number-input;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

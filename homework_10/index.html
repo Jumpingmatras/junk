@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Frontend | Homework 10 </title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+		<div class="form__wrapper">
+			<form method="POST" action="/submit" target="_blank">
+				<div class="form__title">Регистрация</div>
+				<div class="form__item-wrapper">
+					<label class="star-label_1" id="mailStar" for="mail-input">*</label>
+					<label class="input-label" id="mailLabel" for="mail-input">Email</label>
+					<input class="form__input" id="mail-input" type="email" placeholder="Введите email" required>
+					<label class="mail-alarm" id="mailLabelAlarm" for="mail-input">Поле обязательно для заполнения</label>
+				</div>
+				<div class="form__item-wrapper form__item-wrapper_pass">
+					<label class="star-label_2" id="passStar" for="password-input">*</label>
+					<label class="input-label" id="passLabel" for="password-input">Пароль</label>
+					<input class="form__input" id="password-input" type="password" placeholder="Введите пароль" maxlength="10" minlength="8" required>
+					<label class="password-alarm" id="passLabelAlarm" for="password-input">Поле обязательно для заполнения</label>
+				</div>
+				<div class="form__item-wrapper form__item-wrapper_checkbox">
+					<label class="star-label_3" id="checkStar" for="input-checkbox">*</label>
+					<input class="form__checkbox" type="checkbox" checked="checked" id="input-checkbox" required>
+					<div class="form__checkbox-mark" id="checkBox"></div>
+					<label class="form__checkbox-label" for="input-checkbox">
+						Я согласен с <a href="https:/ya.ru/" target="_blank" rel="nofollow noopener noreferrer">Правилами пользования приложением</a></label>
+					<label class="checkbox-alarm" id="checkLabelAlarm" for="input-checkbox"><br>Поле обязательно для заполнения</label>
+				</div>
+				<div class="form__item-wrapper form__item-wrapper_button">
+					<button type="submit" class="form__button">Регистрация</button>
+				</div>
+			</form>
+		</div>
+		<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+.product-card, .product-card__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 260px;
+    height: 570px;
+    background: #fff;
+    color: #2196f3;
+    padding: 0;
+    /*border: 2px solid rgba(100, 100, 100, 0.18);*/
+    /*animation: animation_1  10s cubic-bezier(0.4, 0.63, 0.4, 0.63) infinite;*/
+    /*transform: rotateX(-10deg) rotateY(-10deg) rotateZ(-10deg);*/
+}
+
+.product-card-head {
+    padding: 20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card__img {
+    margin: 0;
+    animation: animation_1  10s cubic-bezier(0.4, 0.63, 0.4, 0.63) infinite;
+    transform: rotateX(-10deg) rotateY(-10deg) rotateZ(-10deg);
+}
+.card__title {
+    display: flex;
+    justify-content: center;
+}
+.card__title > h3 {
+    width: 90%;
+    height: 3.5rem;
+    margin: 0;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #2b7fd7;
+    overflow: hidden;
+    padding: unset;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: block-axis;
+    overflow: hidden;
+
+}
+
+.price {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #f40000;
+    line-height: 4rem;
+}
+
+
+.buy-bar__wrapper {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.description {
+    color: #2196f3;
+    width: 95%;
+    overflow: hidden;
+    padding: unset;
+    font-size: 1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: block-axis;
+    overflow: hidden;
+}
+
+.description__else {
+    display: grid;
+    /*height: 30px;*/
+    margin-top: 5px;
+    grid-template-columns: repeat(2, 1fr);
+    color: #2196f3;
+    width: 90%;
+    font-size: 0.75rem;
+}
+
+.description__else .co1, .co2 {
+    text-align: left;
+}
+
+.buy-bar {
+    margin-top: auto;
+    margin-bottom: 8px;
+}
+
+first {
+    animation: animation_1  10s cubic-bezier(0.4, 0.63, 0.4, 0.63) infinite;
+    transform: rotateX(-10deg) rotateY(-10deg) rotateZ(-10deg);
+}
+
+@keyframes animation_1 {
+    from {
+        transform: rotateX(3deg) rotateY(0deg) rotateZ(1deg) translateX(0px) translateZ(-15px);
+    }
+
+    25% {
+        transform: rotateX(6deg) rotateY(3deg) rotateZ(3deg) translateX(-5px) translateZ(-95px);
+    }
+
+    50% {
+        transform: rotateX(3deg) rotateY(0deg) rotateZ(2deg) translateX(0px) translateZ(-60px);
+    }
+
+    75% {
+        transform: rotateX(0deg) rotateY(-4deg) rotateZ(0deg) translateX(10px) translateZ(-25px);
+    }
+
+    to {
+        transform: rotateX(3deg) rotateY(0deg) rotateZ(1deg) translateX(0px) translateZ(-15px);
+    }
+}
+
+@keyframes animation_2 {
+    from {
+        transform: rotateX(-10deg) rotateY(-10deg) rotateZ(-10deg);
+    }
+
+    40% {
+        transform: rotateX(-180deg) rotateY(-90deg) rotateZ(-360deg);
+    }
+
+    60% {
+        transform: rotateX(-360deg) rotateY(-180deg) rotateZ(-360deg);
+    }
+
+    to {
+        transform: rotateX(710deg) rotateY(350deg) rotateZ(350deg);
+    }
+}
+
+@keyframes animation_3 {
+    from {
+        transform: rotateX(-10deg) rotateY(-10deg) rotateZ(-10deg);
+    }
+
+    40% {
+        transform: rotateX(180deg) rotateY(90deg) rotateZ(360deg);
+    }
+
+    60% {
+        transform: rotateX(360deg) rotateY(180deg) rotateZ(360deg);
+    }
+
+    to {
+        transform: rotateX(710deg) rotateY(350deg) rotateZ(350deg);
+    }
+}
+
+@keyframes animation_4 {
+    from {
+        transform: rotateX(0deg) rotateY(-10deg) rotateZ(0deg) translateZ(0px);
+    }
+
+    50% {
+        transform: rotateX(11deg) rotateY(-5deg) rotateZ(0deg) translateZ(-1000px);
+    }
+
+    to {
+        transform: rotateX(0deg) rotateY(-10deg) rotateZ(0deg) translateZ(0px);
+    }
+
+}

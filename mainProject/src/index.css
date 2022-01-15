@@ -1,0 +1,78 @@
+App {
+    display: flex;
+    justify-content: center;
+    min-width: 768px;
+}
+
+
+:root {
+    --bg:  #fff;
+    --bg-accent: #18c139;
+    --text-color: #0074b8;
+    --header-size: 100px;
+    --foot-size: 80px;
+    --main-size: calc(100% - var(--header-size) - var(--foot-size));
+    --border: 0 solid #474a4d;
+    --border-radius: 0;
+    --speed: 500ms;
+}
+
+* {
+    box-sizing: border-box;
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: roboto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+html, body, wrapper {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background: white;
+
+}
+
+header {
+    position: fixed;
+    top: 0;
+    margin: 0;
+    height: 120px;
+    width: 100%;
+    min-width: 600px;
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    z-index: 30;
+}
+
+main {
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    min-height: calc(100vh - 140px);
+    margin-top: 140px;
+}
+
+footer {
+    position: relative;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    margin-bot: 0px;
+}
+
+@media screen and (max-width: 768px) and (min-width: 320px) {
+
+    .navigation {
+        position: fixed;
+
+        box-shadow: 0px 8px 0px 0px rgb(209, 0, 24);
+    }
+}

@@ -1,0 +1,109 @@
+* {
+	box-sizing: border-box;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	color: #787878;
+}
+
+/*----- 769 - 1440 --------*/
+
+@media screen and (max-width: 1440px) and (min-width: 769px) {
+	
+	body {
+		display: flex;
+		justify-content: center;
+		margin-top: 82px;
+		margin-left: -8px;
+	}
+
+	.form__wrapper {
+		width: 600px;
+		height: 412px;
+	}
+
+	.form__item-wrapper {
+	    padding: 14px 45px 0 45px;
+	}
+
+	.form__item-wrapper_pass {
+		margin-top: -3px;
+	}
+
+	.form__item-wrapper_checkbox {
+		padding-top: 16px;
+
+	}
+
+	.form__title  {
+		font-size: 50px;
+		line-height: 50px;
+		margin-top: 26px;
+
+	}
+
+	.input-label {
+		font-size: 16px;
+	}
+
+	.form__input::placeholder {
+		color: #ccc;
+	}
+
+/*-------------checkbox-----------------------*/
+
+
+	.form__checkbox-mark {
+		width: 24px;
+		height: 24px;
+	}
+
+	.form__checkbox:checked + .form__checkbox-mark::after {
+		/*font-size: 32px;*/
+		left: 4px;
+		top: 0px;
+	}
+
+	.form__checkbox-label{
+		height: 49px;
+		padding-left: 34px;
+		padding-top: 0px;
+		position: relative;
+		font-size: 14px;
+		font-weight: normal;
+		top: 3px;
+	}
+
+/*-------------button-----------------------*/
+
+	.form__item-wrapper_button {
+		text-align: center;
+		margin-left: 4px;
+	}
+
+	.form__button {
+		margin-top: 43px;
+		font-size: 24px;
+		width: 180px;
+		height: 52px;
+		margin-left: 4px;
+		left: 0px;
+		top: 0px;
+		color: white;
+		border: 0;
+		background: #1A226B;
+		border-radius: 10px;
+		cursor: pointer
+	}
+
+	.form__button:hover {
+		margin-top: 44px;
+		font-size: 26px;
+		width: 178px;
+		height: 50px;
+	}
+	
+	.form__button:focus {
+		color: lime;
+	}	
+}

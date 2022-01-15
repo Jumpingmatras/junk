@@ -1,0 +1,170 @@
+* {
+	box-sizing: border-box;
+	color: #333;
+}
+
+body {
+	height: 100%;
+	margin: 0px;
+	background: #ccc;
+}
+
+header {
+	height: 160px;
+	font-family: sans-serif;
+	background: #ccc;
+}
+
+main {
+	font-family: sans-serif;
+	background: #e0ffff;
+	margin: 0px;
+}
+
+footer {
+	height: 100%;
+	width: 100%;
+	font-family: sans-serif;
+	background: #ccc;
+}
+
+.footer-conteiner {
+	height: 100%;
+	padding: 0px 150px;
+}
+
+.footer-conteiner-row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.footer-conteiner-column {
+	border: 0px solid #e0ffff;
+}
+
+.label {
+	display: flex;
+	flex-wrap: wrap;
+	height: 25px;
+	margin: 0px;
+}
+
+
+.wrapper {
+	height: 100%;
+	padding: 50px 150px;
+
+}
+
+.showcase {
+	text-align: center;
+}
+
+.showcase-row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	border: 50px;
+}
+
+.showcase-column {
+
+	border: 50px solid #e0ffff;
+}
+
+.product-card {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 300px;
+	height: 668px;
+	background: #fff;
+	padding: 0px 0px;
+	border: 1px solid #faebd7;
+	text-align: justify;
+	overflow: hidden;
+
+}
+
+.product-card-head {
+	height: 385px;
+	padding: 20px 0px; 
+}
+
+.product-card-head > img {
+	display: block;
+	margin: auto;
+	height: 260px;
+}
+
+.product-card-head > h3 {
+	text-align: center;
+}
+
+.price {
+	height: 34px;
+	width: 298px;
+	text-align: center;
+	font-size: 32px;
+	font-weight: 700;
+	color: #ff033e;
+}
+
+.description {
+	height: 150px;
+	overflow: hidden;
+	padding: 0px 10px;
+}
+
+.delimiter {
+	height: 20px;
+}
+
+.buy-button {
+	height: 160px;
+	width: 298px;
+	margin-bottom: auto;
+	background: #c0c0c0;
+	height: 59px;
+	padding: 0px;
+
+}
+
+button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	font-size: 24px;
+	border: none;
+	border-radius: 0;
+	background: #0fc;
+	cursor: pointer;
+}
+
+button:hover {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	font-size: 24px;
+	border: none;
+	border-radius: 0;
+	background: #0cc;
+
+}
+
+button:focus {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	font-size: 24px;
+	border: none;
+	border-radius: 0;
+	background: #8a9597;
+}
